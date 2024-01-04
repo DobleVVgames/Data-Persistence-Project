@@ -7,6 +7,8 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody m_Rigidbody;
 
+    MainManager mainManager;
+
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
@@ -32,5 +34,7 @@ public class Ball : MonoBehaviour
         }
 
         m_Rigidbody.velocity = velocity;
+
+        //mainManager.AddPoint(0);
     }
 }
